@@ -1,0 +1,35 @@
+{
+    "name": "gillicons",
+    "version": "0.1.1",
+    "description": "A set of free SVG icons.",
+    "main": "index.js",
+    "scripts": {
+        "build": "node build",
+        "del": "rm -rf ./src/svgs",
+        "generate": "./node_modules/svgo/bin/svgo -f ./src/svgs -o ./src/tmp -p 1 --config svgo.config.yml",
+        "optimize": "yarn generate && yarn del && yarn rename",
+        "rebuild": "yarn optimize && yarn build",
+        "rename": "mv ./src/tmp ./src/svgs"
+    },
+    "devDependencies": {
+        "camelcase": "^5.3.1",
+        "del": "^4.1.1",
+        "svgo": "^1.2.2",
+        "xml-reader": "^2.4.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GillianPerard/gillicons.git"
+    },
+    "keywords": [
+        "icons",
+        "svg",
+        "library"
+    ],
+    "author": "Gillian Pérard",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GillianPerard/gillicons/issues"
+    },
+    "homepage": "https://github.com/GillianPerard/gillicons#readme"
+}
