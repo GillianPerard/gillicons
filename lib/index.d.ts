@@ -1,1 +1,0 @@
-import giPlus from './giPlus';export {	giPlus};
