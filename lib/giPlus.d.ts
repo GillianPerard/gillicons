@@ -1,1 +1,0 @@
-import IconDefinition from './icon-definition';declare const giPlus: IconDefinition;export default giPlus;
