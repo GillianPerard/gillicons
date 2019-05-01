@@ -1,12 +1,14 @@
 # gillicons
 
-A set of free 1 SVG icons.
+A set of **1** free SVG icon.
 
 ## Installation
 
 ```sh
 npm install --save gillicons
+
 # or
+
 yarn add gillicons
 ```
 
@@ -15,6 +17,48 @@ yarn add gillicons
 All of the files of this repository are free to use (svg, sketch file, ...).
 
 Make good use!
+
+## Optimize and Build
+
+Install dependencies:
+
+```sh
+npm install
+
+# or
+
+yarn
+```
+
+To optimize svg files, you just need to put yours into the `svgs` folder and run:
+
+```sh
+npm run optimize
+
+# or
+
+yarn optimize
+```
+
+And to build lib:
+
+```sh
+npm run build
+
+# or
+
+yarn build
+```
+
+Or to run both in once:
+
+```sh
+npm run rebuild
+
+# or
+
+yarn rebuild
+```
 
 ## License
 
