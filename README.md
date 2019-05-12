@@ -1,6 +1,6 @@
 # gillicons
 
-A set of **23** free SVG icons.
+A set of **25** free SVG icons.
 
 ## Installation
 
