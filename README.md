@@ -2,6 +2,8 @@
 
 A set of **25** free SVG icons.
 
+See all icons on [gillicons.gillianperard.com](https://gillicons.gillianperard.com).
+
 ## Installation
 
 ```sh
