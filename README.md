@@ -1,8 +1,8 @@
 # gillicons
 
-A set of **57** free SVG icons.
+A set of **59** free SVG icons.
 
-See all icons on [gillicons.gillianperard.com](https://gillicons.gillianperard.com).
+See all icons on [https://gillicons.gillianperard.com](https://gillicons.gillianperard.com).
 
 ## Installation
 
