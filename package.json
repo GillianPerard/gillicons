@@ -1,7 +1,7 @@
 {
     "name": "gillicons",
-    "version": "0.16.1",
-    "description": "A set of 57 free SVG icons.",
+    "version": "0.17.0",
+    "description": "A set of 59 free SVG icons.",
     "main": "index.js",
     "scripts": {
         "build": "node build",
