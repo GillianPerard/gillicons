@@ -4,17 +4,18 @@
     "description": "A set of 100 free SVG icons.",
     "main": "index.js",
     "scripts": {
-        "build": "node build",
-        "del": "rm -rf ./src/svgs",
-        "generate": "./node_modules/svgo/bin/svgo -f ./src/svgs -o ./src/tmp -p 1 --config svgo.config.yml",
-        "optimize": "yarn generate && yarn del && yarn rename",
-        "rebuild": "yarn optimize && yarn build",
-        "rename": "mv ./src/tmp ./src/svgs"
+        "build": "gulp build",
+        "optimize": "gulp optimize",
+        "rebuild": "yarn optimize && yarn build"
     },
     "devDependencies": {
+        "@types/node": "^12.0.7",
         "camelcase": "^5.3.1",
         "del": "^4.1.1",
+        "gulp": "^4.0.2",
+        "gulp-copy": "^4.0.1",
         "svgo": "^1.2.2",
+        "typescript": "^3.5.1",
         "xml-reader": "^2.4.3"
     },
     "repository": {
