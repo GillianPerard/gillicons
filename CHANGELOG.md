@@ -1,128 +1,160 @@
+# [0.19.0](https://github.com/GillianPerard/gillicons/compare/0.18.0...0.19.0) (2019-06-07)
+
+### Features
+
+* **build**: Use Typescript instead of Javascript to generate icon js files
+* **build**: Use template to generate icon js files
+* **build**: Replace manual build by gulp tasks
+* **icon**: Add Category enum
+* **icon**: Add categories to IconDefinition
+* **icon**: Add giCamera
+* **icon**: Add giClockLine
+* **icon**: Add giClock
+* **icon**: Add giDropbox
+* **icon**: Add giFilter
+* **icon**: Add giLayers
+* **icon**: Add giSettingsHorizontal
+* **icon**: Add giSettingsVertical
+* **icon**: Add giShareLink
+
+### Bug fixes
+
+* **icon**: Make the IconDefinition importable directly from the library
+* **icon**: Improve giEnvelope path
+* **icon**: Improve giShoppingBasket path
+* **icon**: Improve giSkype path
+* **icon**: Improve giTrash path
+* **icon**: Improve giUser path
+
+### BREAKING CHANGES
+
+* **icon**: Rename ~~giLinkedin~~ by giLinkedIn
+
 # [0.18.0](https://github.com/GillianPerard/gillicons/compare/0.17.0...0.18.0) (2019-05-26)
 
 ### Features
 
-* giAirbnb
-* giAlignCenter
-* giAlignJustify
-* giAlignLeft
-* giAlignRight
-* giAndroid
-* giBackward
-* giBluetooth
-* giCloud
-* giCog
-* giCompress
-* giCranium-line
-* giCranium
-* giDevil
-* giDisc
-* giEdge
-* giEnvelope
-* giExpand
-* giFastBackward
-* giFastForward
-* giFirefox
-* giForward
-* giGoogleDrive
-* giHeart
-* giInternetExplorer
-* giKubernetes
-* giLock
-* giMedium
-* giPause
-* giPen
-* giPlay
-* giRancher
-* giShoppingBasket
-* giStar
-* giStepBackward
-* giStepForward
-* giStop
-* giUnlock
-* giVivaldi
-* giWindows
-* giXbox
+* **icon**: Add giAirbnb
+* **icon**: Add giAlignCenter
+* **icon**: Add giAlignJustify
+* **icon**: Add giAlignLeft
+* **icon**: Add giAlignRight
+* **icon**: Add giAndroid
+* **icon**: Add giBackward
+* **icon**: Add giBluetooth
+* **icon**: Add giCloud
+* **icon**: Add giCog
+* **icon**: Add giCompress
+* **icon**: Add giCranium-line
+* **icon**: Add giCranium
+* **icon**: Add giDevil
+* **icon**: Add giDisc
+* **icon**: Add giEdge
+* **icon**: Add giEnvelope
+* **icon**: Add giExpand
+* **icon**: Add giFastBackward
+* **icon**: Add giFastForward
+* **icon**: Add giFirefox
+* **icon**: Add giForward
+* **icon**: Add giGoogleDrive
+* **icon**: Add giHeart
+* **icon**: Add giInternetExplorer
+* **icon**: Add giKubernetes
+* **icon**: Add giLock
+* **icon**: Add giMedium
+* **icon**: Add giPause
+* **icon**: Add giPen
+* **icon**: Add giPlay
+* **icon**: Add giRancher
+* **icon**: Add giShoppingBasket
+* **icon**: Add giStar
+* **icon**: Add giStepBackward
+* **icon**: Add giStepForward
+* **icon**: Add giStop
+* **icon**: Add giUnlock
+* **icon**: Add giVivaldi
+* **icon**: Add giWindows
+* **icon**: Add giXbox
 
 # [0.17.0](https://github.com/GillianPerard/gillicons/compare/0.16.1...0.17.0) (2019-05-22)
 
 ### Features
 
-* Add giGrid
-* Add giList
+* **icon**: Add giGrid
+* **icon**: Add giList
 
 # [0.16.1](https://github.com/GillianPerard/gillicons/compare/0.16.0...0.16.1) (2019-05-22)
 
 ### Bug fixes
 
-* Transform group into path for giTrash
+* **icon**: Transform group into path for giTrash
 
 # [0.16.0](https://github.com/GillianPerard/gillicons/compare/0.15.0...0.16.0) (2019-05-21)
 
 ### Features
 
-* Add giApple
-* Add giAtlassian
-* Add giBitbucket
-* Add giConfluence
-* Add giDribbble
-* Add giGillicons
-* Add giGitlab
-* Add giJiraAlign
-* Add giJiraCore
-* Add giJiraServiceDesk
-* Add giJiraSoftware
-* Add giMicrosoft
-* Add giOpsgenie
-* Add giPinterest
-* Add giSourcetree
-* Add giStatuspage
-* Add giTrash
-* Add giTrello
-* Add giTux
-* Add giUser
+* **icon**: Add giApple
+* **icon**: Add giAtlassian
+* **icon**: Add giBitbucket
+* **icon**: Add giConfluence
+* **icon**: Add giDribbble
+* **icon**: Add giGillicons
+* **icon**: Add giGitlab
+* **icon**: Add giJiraAlign
+* **icon**: Add giJiraCore
+* **icon**: Add giJiraServiceDesk
+* **icon**: Add giJiraSoftware
+* **icon**: Add giMicrosoft
+* **icon**: Add giOpsgenie
+* **icon**: Add giPinterest
+* **icon**: Add giSourcetree
+* **icon**: Add giStatuspage
+* **icon**: Add giTrash
+* **icon**: Add giTrello
+* **icon**: Add giTux
+* **icon**: Add giUser
 
 # [0.15.0](https://github.com/GillianPerard/gillicons/compare/0.14.1...0.15.0) (2019-05-19)
 
 ### Features
 
-* Add giDiscord
-* Add giFacebook
-* Add giInstagram
-* Add giLinkedin
-* Add giMessenger
-* Add giSkype
-* Add giSnapchat
-* Add giTwitch
-* Add giTwitter
-* Add giViber
-* Add giWhatsapp
-* Add giYoutube
+* **icon**: Add giDiscord
+* **icon**: Add giFacebook
+* **icon**: Add giInstagram
+* **icon**: Add giLinkedin
+* **icon**: Add giMessenger
+* **icon**: Add giSkype
+* **icon**: Add giSnapchat
+* **icon**: Add giTwitch
+* **icon**: Add giTwitter
+* **icon**: Add giViber
+* **icon**: Add giWhatsapp
+* **icon**: Add giYoutube
 
 # [0.14.1](https://github.com/GillianPerard/gillicons/compare/0.14.0...0.14.1) (2019-05-19)
 
 ### Bug fixes
 
-* Fix giReact path
+* **icon**: Fix giReact path
 
 # [0.14.0](https://github.com/GillianPerard/gillicons/compare/0.13.0...0.14.0) (2019-05-14)
 
 ### Features
 
-* Add the link to the online documentation to the README
+* **doc**: Add the link to the online documentation to the README
 
 # [0.13.0](https://github.com/GillianPerard/gillicons/compare/0.12.4...0.13.0) (2019-05-12)
 
 ### Features
 
-* Add giAngular
-* Add giReact
+* **icon**: Add giAngular
+* **icon**: Add giReact
 
 # [0.12.4](https://github.com/GillianPerard/gillicons/compare/0.12.3...0.12.4) (2019-05-12)
 
 ### Bug fixes
 
-* Fix package.json version
+* **doc**: Fix package.json version
 
 # [0.12.3](https://github.com/GillianPerard/gillicons/compare/0.12.2...0.12.3) (2019-05-12)
 
@@ -134,84 +166,84 @@
 
 ### Bug fixes
 
-* Fix giSearch path
+* **icon**: Fix giSearch path
 
 # [0.12.0](https://github.com/GillianPerard/gillicons/compare/0.11.2...0.12.0) (2019-05-11)
 
 ### Features
 
-* Add giDownload
-* Add giGitHub
-* Add giSearch
-* Add giTimesCircle
-* Add giUpload
+* **icon**: Add giDownload
+* **icon**: Add giGitHub
+* **icon**: Add giSearch
+* **icon**: Add giTimesCircle
+* **icon**: Add giUpload
 
 # [0.11.2](https://github.com/GillianPerard/gillicons/compare/0.11.1...0.11.2) (2019-05-07)
 
 ### Bug fixes
 
-* Put each icon inside separate art boards to have the same viewBox equals to "0 0 140 140"
+* **icon**: Put each icon inside separate art boards to have the same viewBox equals to "0 0 140 140"
 
 # [0.11.1](https://github.com/GillianPerard/gillicons/compare/0.11.0...0.11.1) (2019-05-05)
 
 ### Bug fixes
 
-* Set the viewBox to "0 0 140 140" for giPlus
-* Set the viewBox to "0 0 108 108" for giTimes
+* **icon**: Set the viewBox to "0 0 140 140" for giPlus
+* **icon**: Set the viewBox to "0 0 108 108" for giTimes
 
 # [0.11.0](https://github.com/GillianPerard/gillicons/compare/0.10.0...0.11.0) (2019-05-05)
 
 ### Features
 
-* Add giBars
-* Add giCheck
-* Add giDivide
-* Add giEquals
-* Add giMoreHorizontal
-* Add giMoreVertical
-* Add giPercentage
-* Add giTimes
+* **icon**: Add giBars
+* **icon**: Add giCheck
+* **icon**: Add giDivide
+* **icon**: Add giEquals
+* **icon**: Add giMoreHorizontal
+* **icon**: Add giMoreVertical
+* **icon**: Add giPercentage
+* **icon**: Add giTimes
 
 ### Bug fixes
 
-* Set new same viewBox to each icon
+* **icon**: Set new same viewBox to each icon
 
 # [0.10.0](https://github.com/GillianPerard/gillicons/compare/0.6.0...0.10.0) (2019-05-05)
 
 ### Features
 
-* Add giArrowDown
-* Add giArrowLeft
-* Add giArrowRight
-* Add giArrowUp
+* **icon**: Add giArrowDown
+* **icon**: Add giArrowLeft
+* **icon**: Add giArrowRight
+* **icon**: Add giArrowUp
 
 # [0.6.0](https://github.com/GillianPerard/gillicons/compare/0.2.0...0.6.0) (2019-05-05)
 
 ### Features
 
-* Add giChevronDown
-* Add giChevronLeft
-* Add giChevronRight
-* Add giChevronUp
+* **icon**: Add giChevronDown
+* **icon**: Add giChevronLeft
+* **icon**: Add giChevronRight
+* **icon**: Add giChevronUp
 
 # [0.2.0](https://github.com/GillianPerard/gillicons/compare/0.1.2...0.2.0) (2019-05-02)
 
 ### Features
 
-* Add giMinus
+* **icon**: Add giMinus
 
 # [0.1.2](https://github.com/GillianPerard/gillicons/compare/0.1.1...0.1.2) (2019-05-01)
 
 ### Bug fixes
 
-* Remove lib from the repository
+* **git**: Remove lib from the repository
 
 # [0.1.1](https://github.com/GillianPerard/gillicons/commit/b213f39db2d9dda7ef703f444d56a4f6e767034f) (2019-04-29)
 
 ### Features
 
-* Add giPlus
-* Add IconDefinition
-* Build lib
+* **build**: Build the library
+* **icon**: Add giPlus
+* **icon**: Add IconDefinition
 
 
