@@ -1,0 +1,9 @@
+import { IconDefinition } from './iconDefinition'
+import { Category } from './category'
+
+export const %GI_NAME%: IconDefinition = {
+    categories: %CATEGORIES% as Array<Category>,
+    name: '%NAME%',
+    svgPath: '%PATH%',
+    viewBox: '%VIEW_BOX%'
+};
