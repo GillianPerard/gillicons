@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import camelCase from 'camelcase';
 import del from 'del';
-var XmlReader = require('xml-reader');
+const XmlReader = require('xml-reader');
 
 import { categories } from "./data/categories";
 
@@ -26,12 +26,16 @@ icons.forEach((icon: string) => {
     indexExport += `\t${giName},\r`;
 
     let content = iconTemplate.replace('%GI_NAME%', giName);
-    content = content.replace('%CATEGORIES%', `["${categories.get(giName).join('", "')}"]`)
+    const iconCategories = categories.get(giName);
+    if (!iconCategories) {
+        throw new Error(`There is no category for ${giName}`);
+    }
+    content = content.replace('%CATEGORIES%', `["${iconCategories.join('", "')}"]`);
     content = content.replace('%NAME%', name);
     content = content.replace('%PATH%', svgPath);
     content = content.replace('%VIEW_BOX%', viewBox);
     fs.writeFileSync(`${destFolder}/${giName}.ts`, content)
-})
+});
 
 indexImports += `import { IconDefinition } from './iconDefinition';\r`;
 indexExport += '\tIconDefinition\r};';
