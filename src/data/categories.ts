@@ -1,4 +1,4 @@
-import { Category } from "../classes/category";
+import {Category} from "../classes/category";
 
 export const categories: Map<string, Array<string>> = new Map([
     ['giAirbnb', [Category.Brand, Category.HotelAndHousing]],
@@ -15,9 +15,15 @@ export const categories: Map<string, Array<string>> = new Map([
     ['giArrowUp', [Category.Arrow]],
     ['giAtlassian', [Category.Brand, Category.ComputerScience]],
     ['giBackward', [Category.Arrow, Category.Multimedia, Category.Music]],
+    ['giBan', [Category.Other]],
     ['giBars', [Category.Other]],
+    ['giBell', [Category.Object]],
     ['giBitbucket', [Category.Brand, Category.ComputerScience]],
     ['giBluetooth', [Category.Brand, Category.Technology]],
+    ['giCalendarEmptyLine', [Category.DateAndTime, Category.Object]],
+    ['giCalendarEmpty', [Category.DateAndTime, Category.Object]],
+    ['giCalendarLine', [Category.DateAndTime, Category.Object]],
+    ['giCalendar', [Category.DateAndTime, Category.Object]],
     ['giCamera', [Category.ImageAndVideo, Category.Multimedia, Category.Object, Category.Technology]],
     ['giCheck', [Category.Other]],
     ['giChevronDown', [Category.Arrow]],
@@ -55,6 +61,7 @@ export const categories: Map<string, Array<string>> = new Map([
     ['giGoogleDrive', [Category.Brand, Category.ComputerScience]],
     ['giGrid', [Category.Other]],
     ['giHeart', [Category.Health]],
+    ['giImage', [Category.ImageAndVideo, Category.Multimedia, Category.Object]],
     ['giInstagram', [Category.Brand, Category.ImageAndVideo, Category.Social]],
     ['giInternetExplorer', [Category.Brand, Category.ComputerScience]],
     ['giJiraAlign', [Category.Brand, Category.ComputerScience]],
@@ -89,6 +96,10 @@ export const categories: Map<string, Array<string>> = new Map([
     ['giSkype', [Category.Brand, Category.Chat, Category.Social]],
     ['giSnapchat', [Category.Brand, Category.Chat, Category.ImageAndVideo, Category.Social]],
     ['giSourcetree', [Category.Brand, Category.ComputerScience]],
+    ['giStarHalfFillAndLine', [Category.Other]],
+    ['giStarHalfLine', [Category.Other]],
+    ['giStarHalf', [Category.Other]],
+    ['giStarLine', [Category.Other]],
     ['giStar', [Category.Other]],
     ['giStatuspage', [Category.Brand, Category.ComputerScience]],
     ['giStepBackward', [Category.Arrow, Category.Multimedia, Category.Music]],
