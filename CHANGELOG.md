@@ -1,3 +1,20 @@
+# [0.20.0](https://github.com/GillianPerard/gillicons/compare/0.19.0...0.20.0) (2019-06-23)
+
+### Features
+
+* **icon**: Add giBan
+* **icon**: Add giBell
+* **icon**: Add giCalendarEmptyLine
+* **icon**: Add giCalendarEmpty
+* **icon**: Add giCalendarLine
+* **icon**: Add giCalendar
+* **icon**: Add giImage
+* **icon**: Add giStarHalfFillAndLine
+* **icon**: Add giStarHalfLine
+* **icon**: Add giStarHalf
+* **icon**: Add giStarLine
+* **icon**: Update giCamera
+
 # [0.19.0](https://github.com/GillianPerard/gillicons/compare/0.18.0...0.19.0) (2019-06-07)
 
 ### Features
