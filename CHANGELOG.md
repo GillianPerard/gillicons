@@ -1,3 +1,37 @@
+# [0.21.0](https://github.com/GillianPerard/gillicons/compare/0.20.0...0.21.0) (2019-07-06)
+
+### Features
+
+* **icon**: Add giBarChart
+* **icon**: Add giBolt
+* **icon**: Add giCalendarCheckLine
+* **icon**: Add giCalendarCheck
+* **icon**: Add giCalendarDayLine
+* **icon**: Add giCalendarDay
+* **icon**: Add giCalendarMinusLine
+* **icon**: Add giCalendarMinus
+* **icon**: Add giCalendarPlusLine
+* **icon**: Add giCalendarPlus
+* **icon**: Add giCalendarRangeLine
+* **icon**: Add giCalendarRange
+* **icon**: Add giCalendarTimesLine
+* **icon**: Add giCalendarTimes
+* **icon**: Add giCode
+* **icon**: Add giFolderPlus
+* **icon**: Add giFolder
+* **icon**: Add giMicrophone
+* **icon**: Add giPower
+* **icon**: Add giWifi
+
+### Bug fixes
+
+* **icon**: Improve giBell path
+* **icon**: Improve giCalendarEmptyLine path
+* **icon**: Improve giCalendarEmpty path
+* **icon**: Improve giCalendar path
+* **icon**: Resize giStarHalfLine
+* **icon**: Resize giStarHalf
+
 # [0.20.0](https://github.com/GillianPerard/gillicons/compare/0.19.0...0.20.0) (2019-06-23)
 
 ### Features
