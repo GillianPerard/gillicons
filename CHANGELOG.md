@@ -1,3 +1,39 @@
+# [0.22.0](https://github.com/GillianPerard/gillicons/compare/0.21.0...0.22.0) (2019-07-14)
+
+### Features
+
+* **icon**: Add giDesktopLine
+* **icon**: Add giDesktop
+* **icon**: Add giEarth
+* **icon**: Add giEyeLine
+* **icon**: Add giEyeOffLine
+* **icon**: Add giEyeOff
+* **icon**: Add giEye
+* **icon**: Add giMobileLine
+* **icon**: Add giMobile
+* **icon**: Add giPlaystation
+* **icon**: Add giRedo
+* **icon**: Add giRefresh
+* **icon**: Add giSearchMinus
+* **icon**: Add giSearchPlus
+* **icon**: Add giTabletLine
+* **icon**: Add giTablet
+* **icon**: Add giUndo
+
+### Bug fixes
+
+* **icon**: Improve giCalendarCheckLine path
+* **icon**: Improve giCalendarDayLine path
+* **icon**: Improve giCalendarEmptyLine path
+* **icon**: Improve giCalendarLine path
+* **icon**: Improve giCalendarMinusLine path
+* **icon**: Improve giCalendarPlusLine path
+* **icon**: Improve giCalendarRangeLine path
+* **icon**: Improve giCalendarTimesLine path
+* **icon**: Improve giRancher path
+* **icon**: Improve giSearch path
+* **icon**: All icon paths updated due to the update of svgo
+
 # [0.21.0](https://github.com/GillianPerard/gillicons/compare/0.20.0...0.21.0) (2019-07-06)
 
 ### Features
