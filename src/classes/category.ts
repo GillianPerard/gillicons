@@ -1,4 +1,5 @@
 export enum Category {
+    Anatomy = 'anatomy',
     Arrow = 'arrow',
     Brand = 'brand',
     Business = 'business',
