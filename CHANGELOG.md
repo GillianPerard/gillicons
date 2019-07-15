@@ -1,3 +1,10 @@
+# [0.22.1](https://github.com/GillianPerard/gillicons/compare/0.22.0...0.22.1) (2019-07-15)
+
+### Bug fixes
+
+* **dependency**: Downgrade *svgo* from ~~1.3.0~~ to 1.2.2 for Sketch compatibility
+* **icon**: Fix all icon paths (with svgo 1.2.2)
+
 # [0.22.0](https://github.com/GillianPerard/gillicons/compare/0.21.0...0.22.0) (2019-07-14)
 
 ### Features
