@@ -1,3 +1,86 @@
+# [0.23.0](https://github.com/GillianPerard/gillicons/compare/0.22.1...0.23.0) (2019-08-03)
+
+### Features
+
+* **icon**: Add giAt
+* **icon**: Add giCheckCircle
+* **icon**: Add giCursorDefault
+* **icon**: Add giGlobe
+* **icon**: Add giHand
+* **icon**: Add giInformationCircleLine
+* **icon**: Add giInformationCircle
+* **icon**: Add giInformation
+* **icon**: Add giQuestionCircleLine
+* **icon**: Add giQuestionCircle
+* **icon**: Add giQuestion
+* **icon**: Add giVolumeHigh
+* **icon**: Add giVolumeLow
+* **icon**: Add giVolumeMedium
+* **icon**: Add giVolumeMute
+* **icon**: Add giVolumeOff
+
+### Bug fixes
+
+* **icon**: Improve giLock path
+* **icon**: Improve giTimesCircle path
+* **icon**: Redesign giCode
+* **icon**: Set the height to 140px for giCategories
+* **icon**: Set the height to 140px for giAndroid
+* **icon**: Set the height to 140px for giBackward
+* **icon**: Set the height to 140px for giBitbucket
+* **icon**: Set the height to 140px for giCamera
+* **icon**: Set the height to 140px for giCheck
+* **icon**: Set the height to 140px for giChevronDown
+* **icon**: Set the height to 140px for giChevronUp
+* **icon**: Set the height to 140px for giCloud
+* **icon**: Set the height to 140px for giConfluence
+* **icon**: Set the height to 140px for giDesktopLine
+* **icon**: Set the height to 140px for giDesktop
+* **icon**: Set the height to 140px for giDevil
+* **icon**: Set the height to 140px for giDropbox
+* **icon**: Set the height to 140px for giEnvelope
+* **icon**: Set the height to 140px for giEquals
+* **icon**: Set the height to 140px for giEyeLine
+* **icon**: Set the height to 140px for giEyeOffLine
+* **icon**: Set the height to 140px for giEyeOff
+* **icon**: Set the height to 140px for giEye
+* **icon**: Set the height to 140px for giFastForward
+* **icon**: Set the height to 140px for giFastBackward
+* **icon**: Set the height to 140px for giFilter
+* **icon**: Set the height to 140px for giFolderPlus
+* **icon**: Set the height to 140px for giFolder
+* **icon**: Set the height to 140px for giForward
+* **icon**: Set the height to 140px for giGithub
+* **icon**: Set the height to 140px for giGitlab
+* **icon**: Set the height to 140px for giGoogleDrive
+* **icon**: Set the height to 140px for giGrid
+* **icon**: Set the height to 140px for giHeart
+* **icon**: Set the height to 140px for giImage
+* **icon**: Set the height to 140px for giInternetExplorer
+* **icon**: Set the height to 140px for giKubernetes
+* **icon**: Set the height to 140px for giList
+* **icon**: Set the height to 140px for giMinus
+* **icon**: Set the height to 140px for giMoreHorizontal
+* **icon**: Set the height to 140px for giPlaystation
+* **icon**: Set the height to 140px for giRancher
+* **icon**: Set the height to 140px for giReact
+* **icon**: Set the height to 140px for giSettingsHorizontal
+* **icon**: Set the height to 140px for giShoppingBasket
+* **icon**: Set the height to 140px for giSnapchat
+* **icon**: Set the height to 140px for giStarHalfFillAndLine
+* **icon**: Set the height to 140px for giStarHalfLine
+* **icon**: Set the height to 140px for giStarLine
+* **icon**: Set the height to 140px for giStar
+* **icon**: Set the height to 140px for giStatuspage
+* **icon**: Set the height to 140px for giTwitter
+* **icon**: Set the height to 140px for giWifi
+* **icon**: Set the height to 140px for giYoutube
+
+### BREAKING CHANGES
+
+* **icon**: Rename ~~giClock~~ by giClockCircle
+* **icon**: Rename ~~giClockLine~~ by giClockCircleLine
+
 # [0.22.1](https://github.com/GillianPerard/gillicons/compare/0.22.0...0.22.1) (2019-07-15)
 
 ### Bug fixes
