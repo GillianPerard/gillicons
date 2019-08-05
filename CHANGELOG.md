@@ -1,3 +1,13 @@
+# [0.24.0](https://github.com/GillianPerard/gillicons/compare/0.23...0.24.0) (2019-08-05)
+
+### Features
+
+* **icon**: Add giBold
+* **icon**: Add giItalic
+* **icon**: Add giLink
+* **icon**: Add giUnderline
+* **icon**: Add giUnorderedList
+
 # [0.23.0](https://github.com/GillianPerard/gillicons/compare/0.22.1...0.23.0) (2019-08-03)
 
 ### Features
