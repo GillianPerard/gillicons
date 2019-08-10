@@ -1,3 +1,29 @@
+# [0.25.0](https://github.com/GillianPerard/gillicons/compare/0.24...0.25.0) (2019-08-10)
+
+### Features
+
+* **icon**: Add giOrderedList
+
+### Bug fixes
+
+* **icon**: Set the maximum height to 175px for giCamera
+* **icon**: Set the maximum height to 175px for giCloud
+* **icon**: Set the maximum height to 175px for giDesktopLine
+* **icon**: Set the maximum height to 175px for giDesktop
+* **icon**: Set the maximum height to 175px for giEnvelope
+* **icon**: Set the maximum height to 175px for giEyeLine
+* **icon**: Set the maximum height to 175px for giEyeOffLine
+* **icon**: Set the maximum height to 175px for giEyeOff
+* **icon**: Set the maximum height to 175px for giEye
+* **icon**: Set the maximum height to 175px for giFolderPlus
+* **icon**: Set the maximum height to 175px for giFolder
+* **icon**: Set the maximum height to 175px for giImage
+* **icon**: Set the maximum height to 175px for giPlaystation
+* **icon**: Set the maximum height to 175px for giRancher
+* **icon**: Set the maximum height to 175px for giShoppingBasket
+* **icon**: Set the maximum height to 175px for giYoutube
+* **icon**: Set the size to 140px for giCheck
+
 # [0.24.0](https://github.com/GillianPerard/gillicons/compare/0.23...0.24.0) (2019-08-05)
 
 ### Features

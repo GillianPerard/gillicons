@@ -118,6 +118,7 @@ export const categories: Map<string, Array<string>> = new Map([
     ['giMoreHorizontal', [Category.Other]],
     ['giMoreVertical', [Category.Other]],
     ['giOpsgenie', [Category.Brand, Category.ComputerScience]],
+    ['giOrderedList', [Category.Writing]],
     ['giPause', [Category.Multimedia, Category.Music]],
     ['giPen', [Category.Object, Category.Writing]],
     ['giPercentage', [Category.Mathematics]],
