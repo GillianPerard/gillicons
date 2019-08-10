@@ -22,6 +22,9 @@ icons.forEach((icon: string) => {
     const giName = camelCase(`gi-${name}`);
     const svgPath = json.children[0].attributes.d;
     const viewBox = json.attributes.viewBox;
+    const splitViewBox = viewBox.split(' ');
+    const roundedWidth = Math.round(splitViewBox[2] / splitViewBox[3] * 1000) / 1000;
+    const width = `${roundedWidth}em`;
     indexImports += `import { ${giName} } from './${giName}';\r`;
     indexExport += `\t${giName},\r`;
 
@@ -34,6 +37,7 @@ icons.forEach((icon: string) => {
     content = content.replace('%NAME%', name);
     content = content.replace('%PATH%', svgPath);
     content = content.replace('%VIEW_BOX%', viewBox);
+    content = content.replace('%WIDTH%', width);
     fs.writeFileSync(`${destFolder}/${giName}.ts`, content)
 });
 

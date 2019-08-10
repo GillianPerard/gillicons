@@ -5,4 +5,5 @@ export interface IconDefinition {
     name: string;
     svgPath: string;
     viewBox: string;
+    width: string;
 }
