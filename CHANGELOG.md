@@ -1,4 +1,11 @@
-# [0.25.0](https://github.com/GillianPerard/gillicons/compare/0.24...0.25.0) (2019-08-10)
+# [0.26.0](https://github.com/GillianPerard/gillicons/compare/0.25.0...0.26.0) (2019-08-12)
+
+### Features
+
+* **icon**: Add giArrowsHorizontal
+* **icon**: Add giArrowsVertical
+
+# [0.25.0](https://github.com/GillianPerard/gillicons/compare/0.24.0...0.25.0) (2019-08-10)
 
 ### Features
 
@@ -24,7 +31,7 @@
 * **icon**: Set the maximum height to 175px for giYoutube
 * **icon**: Set the size to 140px for giCheck
 
-# [0.24.0](https://github.com/GillianPerard/gillicons/compare/0.23...0.24.0) (2019-08-05)
+# [0.24.0](https://github.com/GillianPerard/gillicons/compare/0.23.0...0.24.0) (2019-08-05)
 
 ### Features
 
