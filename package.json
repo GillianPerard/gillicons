@@ -1,7 +1,7 @@
 {
     "name": "gillicons",
-    "version": "0.26.0",
-    "description": "A set of 181 free SVG icons.",
+    "version": "0.27.0",
+    "description": "A set of 183 free SVG icons.",
     "main": "index.js",
     "scripts": {
         "build": "gulp build",
