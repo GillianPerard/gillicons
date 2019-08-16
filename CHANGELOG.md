@@ -1,3 +1,15 @@
+# [0.27.0](https://github.com/GillianPerard/gillicons/compare/0.26.0...0.27.0) (2019-08-16)
+
+### Features
+
+* **icon**: Add giArrows
+* **icon**: Add giCrop
+
+### Bug fixes
+
+* **icon**: Redesign giArrowsHorizontal
+* **icon**: Redesign giArrowsVertical
+
 # [0.26.0](https://github.com/GillianPerard/gillicons/compare/0.25.0...0.26.0) (2019-08-12)
 
 ### Features
