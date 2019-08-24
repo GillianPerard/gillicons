@@ -1,0 +1,168 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-react"
+    ],
+    "rules": {
+        "align": [
+            true,
+            "parameters",
+            "arguments",
+            "statements"
+        ],
+        "ban": false,
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "curly": true,
+        "eofline": true,
+        "forin": true,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "jsdoc-format": true,
+        "jsx-no-lambda": false,
+        "jsx-no-multiline-js": false,
+        "jsx-boolean-value": false,
+        "jsx-alignment": false,
+        "label-position": true,
+        "max-line-length": [
+            false,
+            120
+        ],
+        "member-ordering": [
+            true,
+            {
+                "alphabetize": true,
+                "order": [
+                    "private-static-field",
+                    "private-instance-field",
+                    "protected-instance-field",
+                    "protected-static-field",
+                    "public-static-field",
+                    "public-instance-field",
+                    "private-constructor",
+                    "protected-constructor",
+                    "public-constructor",
+                    "private-static-method",
+                    "private-instance-method",
+                    "protected-static-method",
+                    "protected-instance-method",
+                    "public-static-method",
+                    "public-instance-method"
+                ]
+            }
+        ],
+        "no-any": false,
+        "no-arg": true,
+        "no-bitwise": false,
+        "no-console": [
+            true,
+            "debug",
+            "info",
+            "time",
+            "timeEnd",
+            "trace"
+        ],
+        "no-consecutive-blank-lines": true,
+        "no-construct": true,
+        "no-debugger": true,
+        "no-duplicate-variable": true,
+        "no-empty": true,
+        "no-eval": true,
+        "no-shadowed-variable": true,
+        "no-string-literal": false,
+        "no-switch-case-fall-through": true,
+        "no-trailing-whitespace": false,
+        "no-unused-expression": true,
+        "no-use-before-declare": false,
+        "one-line": [
+            true,
+            "check-catch",
+            "check-else",
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "jsx-double"
+        ],
+        "radix": true,
+        "semicolon": [
+            true,
+            "always"
+        ],
+        "switch-default": true,
+        "trailing-comma": [
+            false
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "typedef": [
+            true,
+            "parameter",
+            "property-declaration"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-module",
+            "check-operator",
+            "check-separator",
+            "check-type",
+            "check-typecast"
+        ],
+        "only-arrow-functions": true,
+        "member-access": [
+            true,
+            "check-accessor",
+            "check-constructor",
+            "check-parameter-property"
+        ],
+        "no-sparse-arrays": true,
+        "array-type": [
+            true,
+            "generic"
+        ],
+        "no-angle-bracket-type-assertion": true,
+        "no-submodule-imports": false,
+        "arrow-parens": false,
+        "ordered-imports": [
+            true,
+            {
+                "import-sources-order": "case-insensitive",
+                "named-imports-order": "case-insensitive"
+            }
+        ],
+        "prefer-readonly": true
+    }
+}
