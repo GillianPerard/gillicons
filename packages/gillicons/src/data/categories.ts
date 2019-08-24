@@ -1,4 +1,4 @@
-import { Category } from "../classes/category";
+import { Category } from '../classes/category';
 
 export const categories: Map<string, Array<string>> = new Map([
     ['giAirbnb', [Category.Brand, Category.HotelAndHousing]],
@@ -185,4 +185,3 @@ export const categories: Map<string, Array<string>> = new Map([
     ['giXbox', [Category.Brand, Category.Multimedia, Category.Technology, Category.VideoGame]],
     ['giYoutube', [Category.Brand, Category.ImageAndVideo, Category.Multimedia, Category.Social]]
 ]);
-

@@ -6,7 +6,7 @@ const spawn = require('child_process').spawn;
 const genConfigPath = './tsconfig.gen.json';
 
 const genDestinationFolder = './src';
-const destinationFolder = './lib';
+const destinationFolder = './dist';
 
 // Tasks to optimize svg files
 const svgo = () => {
@@ -32,8 +32,8 @@ const copy = () => {
         .pipe(gulpCopy(destinationFolder))
 };
 
-const optimize = (done) => gulp.series(svgo, cleanSVG, renameSVG)(done);
-const build = (done) => gulp.series(cleanGen, clean, transpileGen, generate, transpile, copy, cleanGen)(done);
+const optimize = done => gulp.series(svgo, cleanSVG, renameSVG)(done);
+const build = done => gulp.series(cleanGen, clean, transpileGen, generate, transpile, copy, cleanGen)(done);
 
 const tasks = [build, clean, cleanGen, cleanSVG, copy, generate, optimize, renameSVG, svgo, transpile, transpileGen];
 tasks.forEach(t => {

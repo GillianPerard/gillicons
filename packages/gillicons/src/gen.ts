@@ -1,9 +1,10 @@
-import * as fs from 'fs';
 import camelCase from 'camelcase';
 import del from 'del';
+import * as fs from 'fs';
+
 const XmlReader = require('xml-reader');
 
-import { categories } from "./data/categories";
+import { categories } from './data/categories';
 
 const destFolder = './gen';
 const icons = fs.readdirSync('./src/svgs');
@@ -38,7 +39,7 @@ icons.forEach((icon: string) => {
     content = content.replace('%PATH%', svgPath);
     content = content.replace('%VIEW_BOX%', viewBox);
     content = content.replace('%WIDTH%', width);
-    fs.writeFileSync(`${destFolder}/${giName}.ts`, content)
+    fs.writeFileSync(`${destFolder}/${giName}.ts`, content);
 });
 
 indexImports += `import { IconDefinition } from './iconDefinition';\r`;

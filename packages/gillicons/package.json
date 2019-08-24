@@ -1,0 +1,38 @@
+{
+    "name": "gillicons",
+    "version": "0.27.0",
+    "description": "A set of 183 free SVG icons.",
+    "main": "index.js",
+    "scripts": {
+        "build": "gulp build",
+        "optimize": "gulp optimize",
+        "lib": "yarn optimize && yarn build",
+        "lint": "tslint -p tsconfig.gen.json"
+    },
+    "devDependencies": {
+        "@types/node": "^12.6.2",
+        "camelcase": "^5.3.1",
+        "del": "^4.1.1",
+        "gulp": "^4.0.2",
+        "gulp-copy": "^4.0.1",
+        "svgo": "1.2.2",
+        "tslint": "^5.18.0",
+        "typescript": "^3.5.3",
+        "xml-reader": "^2.4.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GillianPerard/gillicons.git"
+    },
+    "keywords": [
+        "icons",
+        "svg",
+        "library"
+    ],
+    "author": "Gillian Pérard",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GillianPerard/gillicons/issues"
+    },
+    "homepage": "https://github.com/GillianPerard/gillicons#readme"
+}
