@@ -1,0 +1,14 @@
+@import "styles/fonts";
+@import "styles/popper.css";
+
+body, html {
+    color: #393f49;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+button, input, textarea {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
