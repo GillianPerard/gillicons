@@ -1,3 +1,9 @@
+# [0.28.1](https://github.com/GillianPerard/gillicons/compare/0.27.0...0.28.1) (2019-08-25)
+
+### Features
+
+* **icon**: Add giMapMarker
+
 # [0.27.0](https://github.com/GillianPerard/gillicons/compare/0.26.0...0.27.0) (2019-08-16)
 
 ### Features

@@ -1,0 +1,57 @@
+{
+    "name": "react-gillicons",
+    "version": "0.28.1",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "rm -rf ./dist && tsc && cp package.json ./dist/package.json && cp README.md ./dist/README.md && cp ../LICENSE ./dist/LICENSE",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "./node_modules/.bin/tslint -p tsconfig.json",
+        "lint-fix": "./node_modules/.bin/tslint -p tsconfig.json --fix"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.15",
+        "@types/node": "^12.6.2",
+        "@types/react": "^16.8.23",
+        "@types/react-dom": "^16.8.4",
+        "prettier": "^1.18.2",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.18.0",
+        "tslint-loader": "^3.5.4",
+        "tslint-react": "^4.0.0",
+        "typescript": "^3.5.3"
+    },
+    "peerDependencies": {
+        "gillicons": "^0.28.1",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "^3.0.1"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GillianPerard/react-gillicons.git"
+    },
+    "keywords": [
+        "react",
+        "icons",
+        "svg",
+        "library",
+        "component",
+        "gillicons"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GillianPerard/react-gillicons/issues"
+    },
+    "homepage": "https://github.com/GillianPerard/react-gillicons/tree/master/lib#readme",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    }
+}

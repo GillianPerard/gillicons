@@ -1,36 +1,34 @@
 {
     "name": "gillicons",
-    "version": "0.27.0",
-    "description": "A set of 183 free SVG icons.",
-    "main": "index.js",
+    "description": "Gillicons is a set of 3 open-source libraries, containing svg icons, angular component and react component to use these icons.",
+    "version": "0.28.1",
+    "repository": "https://github.com/GillianPerard/gillicons.git",
+    "author": "Gillian Perard <gillian.perard@gmail.com>",
+    "license": "MIT",
+    "private": true,
     "scripts": {
-        "build": "gulp build",
-        "optimize": "gulp optimize",
-        "rebuild": "yarn optimize && yarn build"
+        "install:deps": "yarn && yarn --cwd packages/gillicons && yarn --cwd packages/angular-gillicons && yarn --cwd packages/react-gillicons && yarn --cwd packages/react-gillicons/lib",
+        "build:libs": "yarn --cwd packages/gillicons lib && yarn --cwd packages/angular-gillicons lib  && yarn --cwd packages/react-gillicons lib",
+        "lint": "yarn --cwd packages/gillicons lint && yarn --cwd packages/angular-gillicons lint && yarn --cwd packages/react-gillicons lint",
+        "link:gillicons:angular": "rm -rf packages/angular-gillicons/node_modules/gillicons/* && cp packages/gillicons/dist/* packages/angular-gillicons/node_modules/gillicons",
+        "link:gillicons:react": "rm -rf packages/react-gillicons/node_modules/gillicons/* && cp packages/gillicons/dist/* packages/react-gillicons/node_modules/gillicons",
+        "link:react-gillicons": "rm -rf packages/react-gillicons/node_modules/react-gillicons/* && cp packages/react-gillicons/lib/dist/* packages/react-gillicons/node_modules/react-gillicons",
+        "link:all": "yarn link:gillicons:angular && yarn link:gillicons:react && yarn link:react-gillicons",
+        "start:angular": "yarn --cwd packages/angular-gillicons start:ssr",
+        "start:react": "yarn --cwd packages/react-gillicons start",
+        "semver": "node semver",
+        "publish:libs": "npm publish packages/gillicons/dist && npm publish packages/angular-gillicons/dist/angular-gillicons && npm publish packages/react-gillicons/lib/dist"
     },
     "devDependencies": {
-        "@types/node": "^12.6.2",
-        "camelcase": "^5.3.1",
-        "del": "^4.1.1",
-        "gulp": "^4.0.2",
-        "gulp-copy": "^4.0.1",
-        "svgo": "1.2.2",
-        "typescript": "^3.5.3",
-        "xml-reader": "^2.4.3"
+        "@commitlint/cli": "^8.1.0",
+        "@commitlint/config-conventional": "^8.1.0",
+        "globby": "^10.0.1",
+        "husky": "^3.0.3",
+        "semver": "^6.3.0"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/GillianPerard/gillicons.git"
-    },
-    "keywords": [
-        "icons",
-        "svg",
-        "library"
-    ],
-    "author": "Gillian Pérard",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/GillianPerard/gillicons/issues"
-    },
-    "homepage": "https://github.com/GillianPerard/gillicons#readme"
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    }
 }

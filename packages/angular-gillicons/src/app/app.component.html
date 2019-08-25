@@ -1,0 +1,94 @@
+<main>
+    <nav>
+        <h1>Gillicons
+            <small class="badge">{{version}}</small>
+        </h1>
+        <ul>
+            <li>
+                <a href="https://www.npmjs.com/package/angular-gillicons" target="_blank">
+                    <span class="icon"><gillicon [icon]="giAngular"></gillicon></span>
+                    <span class="text">Angular</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.npmjs.com/package/react-gillicons" target="_blank">
+                    <span class="icon"><gillicon [icon]="giReact"></gillicon></span>
+                    <span class="text">React</span>
+                </a>
+            </li>
+            <li id="github">
+                <a href="https://github.com/GillianPerard" target="_blank">
+                    <gillicon [icon]="giGithub"></gillicon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section id="section-icons">
+        <h2>
+            A set of {{numberOfIcons}} free SVG icons.
+            <small>
+                Under <a href="https://github.com/GillianPerard/gillicons/blob/master/LICENSE" target="_blank">MIT
+                License</a>
+            </small>
+        </h2>
+        <div *ngIf="canDownload()" class="buttons">
+            <button id="btn-all" (click)="downloadAll()">Download All</button>
+            <div id="select">
+                <button id="btn-select" (click)="downloadSelectedIcons()" [disabled]="!canDownloadSelectedIcons">
+                    Download ({{selectedIcons.length}})
+                </button>
+                <span id="reset">
+                    <small *ngIf="selectedIcons.length > 0" (click)="resetSelectedIcons($event)">
+                        Reset
+                    </small>
+                </span>
+            </div>
+        </div>
+        <input type="text" placeholder="Search by name" [(ngModel)]="iconsFilter"/>
+        <div id="subtitle">
+            <div id="displayed-icons">
+                <h3>{{this.displayedIcons.length}} {{this.displayedIcons.length < 2 ? 'gillicon' : 'gillicons'}} displayed</h3>
+                <div id="display-format">
+                    <ng-container *ngIf="getFromLocalStorage(viewKey)">
+                        <button appTooltip="View List" placement="top" [disabled]="view === View.List" (click)="toggleDisplayFormat()">
+                            <gillicon [icon]="giList"></gillicon>
+                        </button>
+                        <button appTooltip="View Grid" placement="top" [disabled]="view === View.Grid" (click)="toggleDisplayFormat()">
+                            <gillicon [icon]="giGrid"></gillicon>
+                        </button>
+                    </ng-container>
+                </div>
+            </div>
+            <div id="selected-categories">
+                <button *ngFor="let category of iconCategoriesFilter" (click)="toggleCategory(category)">
+                    {{category}}
+                    <gillicon [icon]="giTimes"></gillicon>
+                </button>
+            </div>
+            <hr>
+        </div>
+        <div id="categories-and-icons" [class]="view">
+            <ul id="categories" [ngClass]="{'any-selected': iconCategoriesFilter.length === 0}">
+                <li [ngClass]="{'selected': isCategorySelected(category)}" *ngFor="let category of categories" (click)="toggleCategory(category)">
+                    {{category}}
+                </li>
+            </ul>
+            <div id="icons" *ngIf="getFromLocalStorage(viewKey)">
+                <ng-container *ngIf="view === View.Grid; else listView">
+                    <div class="icon" [ngClass]="{'selected': isSelected(icon)}" *ngFor="let icon of displayedIcons"
+                         (click)="selectIcon(icon)" [appTooltip]="icon.name" [delay]="{show: 500, hide: 100}">
+                        <gillicon [icon]="icon"></gillicon>
+                        <span>{{icon.name}}</span>
+                    </div>
+                </ng-container>
+                <ng-template #listView>
+                    <div class="icon" [ngClass]="{'selected': isSelected(icon)}" *ngFor="let icon of displayedIcons"
+                         (click)="selectIcon(icon)">
+                        <gillicon [icon]="icon"></gillicon>
+                        <span>{{icon.name}}</span>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </section>
+</main>

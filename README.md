@@ -1,67 +1,78 @@
-# gillicons
+# Gillicons
 
-A set of **183** free SVG icons.
+The mono-repository for the Gillicons project which aims 
+to create and distribute free and open-source svg icons.
 
-See all icons on [https://gillicons.gillianperard.com](https://gillicons.gillianperard.com).
+This repository is composed of:
 
-## Installation
+* **gillicons** (svg icons, sketch files, etc.)
+* **angular-gillicons** (Angular component to use icons easily)
+* **react-gillicons** (React component to use icons easily as well)
 
-```sh
-npm install --save gillicons
+## Scripts
 
-# or
+First of all, you need to stay in the root folder.
 
-yarn add gillicons
-```
+Then you'll be able to use the scripts written in the **package.json**:
 
-## Usage
+* install:deps
+* build:libs
+* lint
+* link:all
+* start:angular
+* start:react
+* semver
+* publish:libs
 
-All of the files of this repository are free to use (svg, sketch file, ...).
+## Basic workflow
 
-Make good use!
+> Add a new icon
 
-## Optimize and Build
-
-Install dependencies:
-
-```sh
-npm install
-
-# or
-
-yarn
-```
-
-To optimize svg files, you just need to put yours into the `svgs` folder and run:
+Install all the dependencies.
 
 ```sh
-npm run optimize
-
-# or
-
-yarn optimize
+yarn install:deps
 ```
 
-And to build lib:
+Create a new icon inside **gillicons.sketch** and 
+export it to the **packages/gillicons/src/svgs** folder.
+
+Build the libraries.
 
 ```sh
-npm run build
-
-# or
-
-yarn build
+yarn build:libs
 ```
 
-Or to run both in once:
+Link all the dependencies to have access to the new content/feature.
 
 ```sh
-npm run rebuild
-
-# or
-
-yarn rebuild
+yarn link:all
 ```
 
-## License
+Test on the Angular app.
 
-This library is released under the terms of the [MIT License](./LICENSE).
+```sh
+yarn start:angular
+```
+
+Test on the React app.
+
+```sh
+yarn start:react
+```
+
+If everything looks good, update the packages versions.
+
+```sh
+yarn semver
+```
+
+Fill the new version you want.
+
+Update the **[CHANGELOG.md](./CHANGELOG.md)**.
+
+Then publish all the libraries at once.
+
+```sh
+yarn publish:libs
+```

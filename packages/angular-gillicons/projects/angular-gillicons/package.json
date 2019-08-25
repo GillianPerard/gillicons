@@ -1,0 +1,30 @@
+{
+    "name": "angular-gillicons",
+    "author": "Gillian Pérard",
+    "version": "0.28.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GillianPerard/angular-gillicons.git"
+    },
+    "keywords": [
+        "angular",
+        "icons",
+        "svg",
+        "library",
+        "component",
+        "gillicons"
+    ],
+    "peerDependencies": {
+        "@angular/common": "^7.2.0",
+        "@angular/core": "^7.2.0",
+        "gillicons": "^0.28.1"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GillianPerard/angular-gillicons/issues"
+    },
+    "homepage": "https://github.com/GillianPerard/angular-gillicons/tree/master/projects/angular-gillicons#readme",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    }
+}
