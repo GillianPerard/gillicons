@@ -1,7 +1,7 @@
 {
     "name": "gillicons",
-    "version": "0.27.0",
-    "description": "A set of 183 free SVG icons.",
+    "version": "0.28.1",
+    "description": "A set of 184 free SVG icons.",
     "main": "index.js",
     "scripts": {
         "build": "gulp build",
@@ -34,5 +34,8 @@
     "bugs": {
         "url": "https://github.com/GillianPerard/gillicons/issues"
     },
-    "homepage": "https://github.com/GillianPerard/gillicons#readme"
+    "homepage": "https://github.com/GillianPerard/gillicons#readme",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    }
 }
