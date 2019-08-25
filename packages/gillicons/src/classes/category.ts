@@ -10,6 +10,7 @@ export enum Category {
     Health= 'health',
     HotelAndHousing = 'hotel & housing',
     ImageAndVideo = 'image & video',
+    Journey = 'journey',
     Mathematics = 'mathematics',
     Mechanics = 'mechanics',
     Multimedia = 'multimedia',
