@@ -1,7 +1,7 @@
 {
     "name": "gillicons",
     "description": "Gillicons is a set of 3 open-source libraries, containing svg icons, angular component and react component to use these icons.",
-    "version": "0.28.1",
+    "version": "0.29.0",
     "repository": "https://github.com/GillianPerard/gillicons.git",
     "author": "Gillian Perard <gillian.perard@gmail.com>",
     "license": "MIT",
