@@ -10,8 +10,9 @@ function App() {
         <Gillicon
             className="icon"
             icon={icon}
-            key={icon.name} />
-    ))
+            key={icon.name}
+            style={{fontSize: '40px'}} />
+    ));
 
     return (
         <>

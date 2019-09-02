@@ -41,7 +41,8 @@ Finally write in `jsx/tsx`:
 ```jsx
 <Gillicon
     className="class-you-want"
-    icon={giPlus} />
+    icon={giPlus}
+    style={...} />
 ```
 
 ## License
