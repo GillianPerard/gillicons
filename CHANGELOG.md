@@ -1,3 +1,28 @@
+# [0.29.0](https://github.com/GillianPerard/gillicons/compare/0.28.1...0.29.0) (2019-09-02)
+
+### Features
+
+* **all**: Rename IconDefinition file by icon-definition.ts
+* **gillicons**: Add giCoins
+* **gillicons**: Add giCreditCardLine
+* **gillicons**: Add giCreditCard
+* **gillicons**: Add giGift
+* **gillicons**: Add giLydia
+* **gillicons**: Add giMoneyBill
+* **gillicons**: Add giPaypal
+* **gillicons**: Add Money as category
+* **react-gillicons**: Add style property to GilliconProps
+* **react-gillicons**: Export GilliconProps
+
+### Bug fixes
+
+* **gillicons**: Refactor path for giArrowsHorizontal
+* **gillicons**: Refactor path for giArrowsVertical
+* **gillicons**: Refactor path for giArrows
+* **gillicons**: Refactor path for giCrop
+* **react-gillicons**: Remove useless dependencies: react-dom & react-scripts
+
+
 # [0.28.1](https://github.com/GillianPerard/gillicons/compare/0.27.0...0.28.1) (2019-08-25)
 
 ### Features
