@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconDefinition } from 'gillicons/iconDefinition';
+import { IconDefinition } from 'gillicons/icon-definition';
 
 interface GilliconProps {
     className?: string;
