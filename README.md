@@ -18,7 +18,6 @@ Then you'll be able to use the scripts written in the **package.json**:
 * install:deps
 * build:libs
 * lint
-* link:all
 * start:angular
 * start:react
 * semver
@@ -37,16 +36,10 @@ yarn install:deps
 Create a new icon inside **gillicons.sketch** and 
 export it to the **packages/gillicons/src/svgs** folder.
 
-Build the libraries.
+Build the libraries and link them all.
 
 ```sh
 yarn build:libs
-```
-
-Link all the dependencies to have access to the new content/feature.
-
-```sh
-yarn link:all
 ```
 
 Test on the Angular app.

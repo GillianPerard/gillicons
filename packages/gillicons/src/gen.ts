@@ -42,10 +42,10 @@ icons.forEach((icon: string) => {
     fs.writeFileSync(`${destFolder}/${giName}.ts`, content);
 });
 
-indexImports += `import { IconDefinition } from './iconDefinition';\r`;
+indexImports += `import { IconDefinition } from './icon-definition';\r`;
 indexExport += '\tIconDefinition\r};';
 const index = `${indexImports}\r${indexExport}`;
 fs.writeFileSync(`${destFolder}/index.ts`, index);
 
-fs.copyFileSync('./src/classes/iconDefinition.ts', `${destFolder}/iconDefinition.ts`);
+fs.copyFileSync('./src/classes/icon-definition.ts', `${destFolder}/icon-definition.ts`);
 fs.copyFileSync('./src/classes/category.ts', `${destFolder}/category.ts`);

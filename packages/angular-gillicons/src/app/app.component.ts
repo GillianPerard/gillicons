@@ -5,7 +5,7 @@ import { Meta } from '@angular/platform-browser';
 
 import * as gillicons from 'gillicons';
 import { Category } from 'gillicons/category';
-import { IconDefinition } from 'gillicons/iconDefinition';
+import { IconDefinition } from 'gillicons/icon-definition';
 
 import { environment } from '../environments/environment';
 import { Data } from './interfaces/data';

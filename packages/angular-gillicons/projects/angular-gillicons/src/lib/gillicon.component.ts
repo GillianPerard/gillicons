@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { IconDefinition } from 'gillicons/iconDefinition';
+import { IconDefinition } from 'gillicons/icon-definition';
 
 @Component({
     selector: 'gillicon',
