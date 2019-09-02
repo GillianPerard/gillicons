@@ -8,12 +8,11 @@
     "private": true,
     "scripts": {
         "install:deps": "yarn && yarn --cwd packages/gillicons && yarn --cwd packages/angular-gillicons && yarn --cwd packages/react-gillicons && yarn --cwd packages/react-gillicons/lib",
-        "build:libs": "yarn --cwd packages/gillicons lib && yarn --cwd packages/angular-gillicons lib  && yarn --cwd packages/react-gillicons lib",
+        "build:libs": "yarn --cwd packages/gillicons lib && yarn link:gillicons:angular && yarn link:gillicons:react && yarn --cwd packages/angular-gillicons lib  && yarn --cwd packages/react-gillicons lib && yarn link:react-gillicons",
         "lint": "yarn --cwd packages/gillicons lint && yarn --cwd packages/angular-gillicons lint && yarn --cwd packages/react-gillicons lint",
         "link:gillicons:angular": "rm -rf packages/angular-gillicons/node_modules/gillicons/* && cp packages/gillicons/dist/* packages/angular-gillicons/node_modules/gillicons",
         "link:gillicons:react": "rm -rf packages/react-gillicons/node_modules/gillicons/* && cp packages/gillicons/dist/* packages/react-gillicons/node_modules/gillicons",
         "link:react-gillicons": "rm -rf packages/react-gillicons/node_modules/react-gillicons/* && cp packages/react-gillicons/lib/dist/* packages/react-gillicons/node_modules/react-gillicons",
-        "link:all": "yarn link:gillicons:angular && yarn link:gillicons:react && yarn link:react-gillicons",
         "start:angular": "yarn --cwd packages/angular-gillicons start:ssr",
         "start:react": "yarn --cwd packages/react-gillicons start",
         "semver": "node semver",
