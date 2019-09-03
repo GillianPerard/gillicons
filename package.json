@@ -16,7 +16,7 @@
         "start:angular": "yarn --cwd packages/angular-gillicons start:ssr",
         "start:react": "yarn --cwd packages/react-gillicons start",
         "semver": "node semver",
-        "publish:libs": "npm publish packages/gillicons/dist && npm publish packages/angular-gillicons/dist/angular-gillicons && npm publish packages/react-gillicons/lib/dist"
+        "publish:libs": "yarn build:libs && npm publish packages/gillicons/dist && npm publish packages/angular-gillicons/dist/angular-gillicons && npm publish packages/react-gillicons/lib/dist"
     },
     "devDependencies": {
         "@commitlint/cli": "^8.1.0",
