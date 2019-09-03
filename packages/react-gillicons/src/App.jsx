@@ -11,6 +11,7 @@ function App() {
             className="icon"
             icon={icon}
             key={icon.name}
+            onClick={() => console.log(icon.name)}
             style={{fontSize: '40px'}} />
     ));
 
