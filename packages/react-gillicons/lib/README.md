@@ -42,6 +42,7 @@ Finally write in `jsx/tsx`:
 <Gillicon
     className="class-you-want"
     icon={giPlus}
+    onClick={doSomething}
     style={...} />
 ```
 
