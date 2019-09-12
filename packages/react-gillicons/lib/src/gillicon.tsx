@@ -5,7 +5,7 @@ import { IconDefinition } from 'gillicons/icon-definition';
 export interface GilliconProps {
     className?: string;
     icon: IconDefinition;
-    onClick: () => any;
+    onClick?: () => any;
     style?: React.CSSProperties;
 }
 

@@ -1,3 +1,9 @@
+# [0.30.2](https://github.com/GillianPerard/gillicons/compare/0.30.1...0.30.2) (2019-09-12)
+
+### Bug fixes
+
+* **react-gillicons**: Set the onClick event of Gillicon component as optional
+
 # [0.30.1](https://github.com/GillianPerard/gillicons/compare/0.29.0...0.30.1) (2019-09-03)
 
 ### Features
