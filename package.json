@@ -24,10 +24,5 @@
         "globby": "^10.0.1",
         "husky": "^3.0.3",
         "semver": "^6.3.0"
-    },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
     }
 }
