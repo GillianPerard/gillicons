@@ -1,3 +1,9 @@
+# [0.31.0](https://github.com/GillianPerard/gillicons/compare/0.30.2...0.31.0) (2019-09-29)
+
+### Features
+
+* **gillicons**: Add giStrikethrough
+
 # [0.30.2](https://github.com/GillianPerard/gillicons/compare/0.30.1...0.30.2) (2019-09-12)
 
 ### Bug fixes
