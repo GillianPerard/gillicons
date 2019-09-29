@@ -165,6 +165,7 @@ export const categories: Map<string, Array<string>> = new Map([
     ['giStepBackward', [Category.Arrow, Category.Multimedia, Category.Music]],
     ['giStepForward', [Category.Arrow, Category.Multimedia, Category.Music]],
     ['giStop', [Category.Multimedia, Category.Music]],
+    ['giStrikethrough', [Category.Writing]],
     ['giTabletLine', [Category.Multimedia, Category.Technology]],
     ['giTablet', [Category.Multimedia, Category.Technology]],
     ['giTimes', [Category.Mathematics]],
