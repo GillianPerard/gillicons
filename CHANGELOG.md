@@ -1,3 +1,24 @@
+# [0.32.0](https://github.com/GillianPerard/gillicons/compare/0.31.0...0.32.0) (2019-10-05)
+
+### Features
+
+* **gillicons**: Add giExclamation
+* **gillicons**: Add giExclamationCircle
+* **gillicons**: Add giExclamationCircleLine
+* **gillicons**: Add giExclamationTriangle
+* **gillicons**: Add giExclamationTriangleLine
+* **gillicons**: Add giHashtag
+* **gillicons**: Add giHeadphones
+* **gillicons**: Add giUsers
+
+### Bug fixes
+
+* **gillicons**: Modify the design of giAt
+* **gillicons**: Modify the design of giBold
+* **gillicons**: Modify the design of giGift
+* **gillicons**: Modify the design of giItalic
+* **gillicons**: Update icon paths
+
 # [0.31.0](https://github.com/GillianPerard/gillicons/compare/0.30.2...0.31.0) (2019-09-29)
 
 ### Features

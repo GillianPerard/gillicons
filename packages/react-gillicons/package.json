@@ -1,13 +1,13 @@
 {
     "name": "react-gillicons-example",
-    "version": "0.31.0",
+    "version": "0.32.0",
     "private": true,
     "dependencies": {
         "babel-jest": "24.8.0",
-        "gillicons": "^0.31.0",
+        "gillicons": "^0.32.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
-        "react-gillicons": "^0.31.0",
+        "react-gillicons": "^0.32.0",
         "react-scripts": "3.0.1"
     },
     "scripts": {
