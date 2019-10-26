@@ -4135,10 +4135,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-gillicons@^0.28.1:
-  version "0.28.1"
-  resolved "https://registry.yarnpkg.com/gillicons/-/gillicons-0.28.1.tgz#5fd914d1ed5805c64aeacb834d9dd24fba3bea75"
-  integrity sha512-Bn65YrvsFd9xjX5tEc8YNY7nyrNyuxwZWGkp5fliVPAcQbZEyvsLyDAirIF+Zk+tHGa2HTinMuu0lLZFGF37lQ==
+gillicons@^0.32.0:
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/gillicons/-/gillicons-0.32.0.tgz#ee4b11cbd6431f3d521476ce9a0ec2a7c336037c"
+  integrity sha512-SoGGJcoccikGRh5qBfWNI92yri+L1krjQZtcYRo+NXzwXk0/kPtQ0mDwDyESe6Yu2Okrn0tlhVPd2tM7sZudhg==
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -7831,10 +7831,10 @@ react-error-overlay@^6.0.1:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.1.tgz#b8d3cf9bb991c02883225c48044cb3ee20413e0f"
   integrity sha512-V9yoTr6MeZXPPd4nV/05eCBvGH9cGzc52FN8fs0O0TVQ3HYYf1n7EgZVtHbldRq5xU9zEzoXIITjYNIfxDDdUw==
 
-react-gillicons@^0.28.1:
-  version "0.28.1"
-  resolved "https://registry.yarnpkg.com/react-gillicons/-/react-gillicons-0.28.1.tgz#6eaf787ba02081568eda8cfd321258e370f9b283"
-  integrity sha512-nO+Izr+JvEHqJOQXT3OwXKaTHyUmBeIPVNPzSYSsJKlrQpqUJhJEd/bB3PPwDNSv5xmwCswoEUjKXs9fsmOBBg==
+react-gillicons@^0.32.0:
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/react-gillicons/-/react-gillicons-0.32.0.tgz#5e67f21cfea29dcc4667ad352d4b1b88d06e771d"
+  integrity sha512-BnFPoYV8HXg33wKbh2D79bLGVjNarjtH5v76xAhn3MjYLbO8lLH1N7NOVjVK/FsvnXjkhYj1H3DL4ZB2eoBUjw==
 
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.9.0"

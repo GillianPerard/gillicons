@@ -2,7 +2,7 @@
 
 A set of **200** free SVG icons.
 
-See all icons on [https://gillicons.gillianperard.com](https://gillicons.gillianperard.com).
+See all icons on [https://getgillicons.gillianperard.com](https://getgillicons.gillianperard.com).
 
 ## Installation
 

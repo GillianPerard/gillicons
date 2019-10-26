@@ -15,12 +15,12 @@
         "link:react-gillicons": "rm -rf packages/react-gillicons/node_modules/react-gillicons/* && cp packages/react-gillicons/lib/dist/* packages/react-gillicons/node_modules/react-gillicons",
         "start:angular": "yarn --cwd packages/angular-gillicons start:ssr",
         "start:react": "yarn --cwd packages/react-gillicons start",
-        "semver": "node semver",
         "publish:libs": "yarn build:libs && npm publish packages/gillicons/dist && npm publish packages/angular-gillicons/dist/angular-gillicons && npm publish packages/react-gillicons/lib/dist"
     },
     "devDependencies": {
         "@commitlint/cli": "^8.1.0",
         "@commitlint/config-conventional": "^8.1.0",
+        "commander": "^3.0.2",
         "globby": "^10.0.1",
         "husky": "^3.0.3",
         "semver": "^6.3.0"

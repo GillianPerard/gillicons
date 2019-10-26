@@ -1,7 +1,8 @@
 # Gillicons
 
-The mono-repository for the Gillicons project which aims 
-to create and distribute free and open-source svg icons.
+The mono-repository for the Gillicons project which aims to create and distribute free and open-source svg icons.
+
+See all icons on [https://getgillicons.gillianperard.com](https://getgillicons.gillianperard.com).
 
 This repository is composed of:
 
@@ -20,8 +21,11 @@ Then you'll be able to use the scripts written in the **package.json**:
 * lint
 * start:angular
 * start:react
-* semver
 * publish:libs
+
+And one other using directly node:
+
+* semver
 
 ## Basic workflow
 
@@ -57,15 +61,9 @@ yarn start:react
 If everything looks good, update the packages versions.
 
 ```sh
-yarn semver
+node semver x.x.x
 ```
 
 Fill the new version you want.
 
 Update the **[CHANGELOG.md](./CHANGELOG.md)**.
-
-Then publish all the libraries at once.
-
-```sh
-yarn publish:libs
-```
