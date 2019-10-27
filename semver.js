@@ -1,5 +1,4 @@
 const fs = require('fs');
-const readline = require('readline');
 const globby = require('globby');
 const semver = require('semver');
 
@@ -38,27 +37,32 @@ const updateAllVersions = newVersion => {
     })
 };
 
-if (!semver.valid(currentVersion)) {
-    throw new Error('The specified version in the root package.json is missing or incorrect.');
+const args = process.argv
+
+if (args.length !== 3) {
+    console.error('The semver command must look like to: node semver x.x.x.');
+    process.exit(1);
 }
 
-console.log(`The current version is: ${currentVersion}`);
+if (!semver.valid(currentVersion)) {
+    console.error('The specified version in the root package.json is missing or incorrect.');
+    process.exit(1);
+}
 
-const rl = readline.createInterface(process.stdin, process.stdout);
+const newVersion = args[2];
+if (!semver.valid(newVersion)) {
+    console.error('The specified new version is not semver compliant.');
+    process.exit(1);
+}
 
-rl.setPrompt('New version> ');
-rl.prompt();
 
-rl.on('line', answer => {
-    if (semver.valid(answer)) {
-        updateRootPackageVersion(answer);
-        updateAllVersions(answer);
-        rl.close();
-    } else {
-        console.log('The new version is incorrect. Try again.');
-    }
-    rl.prompt();
-}).on('close', () => {
-    console.log('Versions updated!');
-    process.exit(0);
-});
+if (!semver.gt(newVersion, currentVersion)) {
+    console.error('The specified new version is not greater than the latest one.');
+    process.exit(1);
+}
+
+updateRootPackageVersion(newVersion);
+updateAllVersions(newVersion);
+
+console.log(`Versions updated to ${newVersion}!`);
+process.exit(0);

@@ -1,0 +1,124 @@
+variables:
+    DOCKER_DRIVER: overlay2
+    NODE_IMAGE: node:10.16-alpine
+    DOCKER_LATEST: docker:19.03
+    DOCKER_DIND: docker:dind
+
+stages:
+    - sonar-check
+    - build-main
+    - build-secondary
+    - docker
+    - deploy
+
+sonarqube-check:
+    stage: sonar-check
+    image: hiorgserver/gitlab-sonar-scanner
+    variables:
+        SONAR_URL: https://sonarqube.gillianperard.com
+        SONAR_TOKEN: $SONARQUBE_TOKEN
+        SONAR_PROJECT_VERSION: $CI_COMMIT_REF_NAME
+        SONAR_GITLAB_COMMENT: "true"
+        SONAR_PUBLISH: "true"
+    script:
+        - npm install -D typescript
+        - /usr/bin/sonar-scanner-run.sh
+    except:
+        - master
+    allow_failure: true
+
+BUILD gillicons:
+    stage: build-main
+    variables:
+        NAME: gillicons
+        ROOT_DIR: packages/gillicons
+    image: $NODE_IMAGE
+    script:
+        - cd $ROOT_DIR
+        - yarn
+        - yarn lint
+        - yarn build
+    artifacts:
+        paths:
+            - $ROOT_DIR/dist
+        expire_in: 1 day
+
+BUILD angular-gillicons:
+    stage: build-secondary
+    variables:
+        NAME: angular-gillicons
+        ROOT_DIR: packages/angular-gillicons
+    image: $NODE_IMAGE
+    before_script:
+        - yarn
+        - node install --cwd $ROOT_DIR -e gillicons --pure-lockfile
+        - mkdir -p $ROOT_DIR/node_modules/gillicons
+        - cp packages/gillicons/dist/* $ROOT_DIR/node_modules/gillicons
+        - cd $ROOT_DIR
+    script:
+        - yarn lint
+        - yarn lib
+        - yarn build:ssr
+    dependencies:
+        - BUILD gillicons
+    artifacts:
+        paths:
+            - $ROOT_DIR/dist
+        expire_in: 1 day
+
+BUILD react-gillicons:
+    stage: build-secondary
+    variables:
+        NAME: react-gillicons
+        ROOT_DIR: packages/react-gillicons
+    image: $NODE_IMAGE
+    before_script:
+        - yarn
+        - node install --cwd $ROOT_DIR -e gillicons -e react-gillicons --pure-lockfile
+        - mkdir -p $ROOT_DIR/node_modules/gillicons
+        - cp packages/gillicons/dist/* $ROOT_DIR/node_modules/gillicons
+        - cd $ROOT_DIR
+        - yarn --cwd lib install
+    script:
+        - yarn lint
+        - yarn lib
+        - mkdir -p node_modules/react-gillicons
+        - cp lib/dist/* node_modules/react-gillicons
+        - yarn build
+    dependencies:
+        - BUILD gillicons
+    artifacts:
+        paths:
+            - $ROOT_DIR/lib/dist
+        expire_in: 1 day
+
+DOCKER documentation:
+    stage: docker
+    image: $DOCKER_LATEST
+    services:
+        - $DOCKER_DIND
+    before_script:
+        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    script:
+        - docker build -t $CI_REGISTRY_IMAGE/documentation:$CI_COMMIT_SHA -t $CI_REGISTRY_IMAGE/documentation:latest packages/angular-gillicons
+        - docker push $CI_REGISTRY_IMAGE/documentation:$CI_COMMIT_SHA
+    dependencies:
+        - BUILD angular-gillicons
+    when: manual
+
+DEPLOY documentation:
+    stage: deploy
+    image: $DOCKER_LATEST
+    variables:
+        GIT_STRATEGY: none
+    script:
+        - apk add --no-cache wget curl
+        - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+        - chmod +x ./kubectl
+        - mv ./kubectl /usr/local/bin/kubectl
+        - wget https://github.com/rancher/cli/releases/download/v2.0.6/rancher-linux-amd64-v2.0.6.tar.xz
+        - tar xf rancher-linux-amd64-v2.0.6.tar.xz && mv ./rancher-v2.0.6/rancher /usr/local/bin/rancher
+        - rancher login $RANCHER_URL --token $RANCHER_BEARER_TOKEN --context $RANCHER_CONTEXT
+        - rancher kubectl set image deployments/$RANCHER_WORKLOAD $RANCHER_WORKLOAD=$CI_REGISTRY_IMAGE/documentation:$CI_COMMIT_SHA --namespace=$RANCHER_NAMESPACE
+    dependencies: []
+    when: manual

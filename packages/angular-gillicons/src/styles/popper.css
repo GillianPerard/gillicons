@@ -67,12 +67,9 @@ p.bold {
     border-style: solid;
     position: absolute;
     margin: 5px;
-}
-
-.tooltip .tooltip-arrow,
-.popper .popper__arrow {
     border-color: black;
 }
+
 .style5 .tooltip .tooltip-arrow {
     border-color: #1E252B;
 }
